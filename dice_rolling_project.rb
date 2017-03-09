@@ -1,7 +1,6 @@
 ###  Program intended to give a random output based on the user's number of desired die AND desired number of sides for each die
 
   ##   Welcomes the user
-
       print "\n""Hello! Welcome to the dice rolling program!"
 
     #   Asks for the number of dice the user wishes to roll
