@@ -37,6 +37,8 @@
 
                         die_number_success = die_number
 
+                        die_number_success = die_number_success.to_i
+
 
 
   ##    Tells the user the number of die chosen and asks how many sides they wish for each die to have
@@ -66,6 +68,8 @@
 
                              sides_number_success = sides_number
 
+                             sides_number_success = sides_number_success.to_i
+
 
 
 
@@ -74,7 +78,12 @@
 
       #   Creates formula to roll dice.
 
-          roll_result = die_number_success + rand(sides_number_success)
+         die_number_success.times do |die_number_success|
+
+          puts rand(1..sides_number_success)
+          puts "\n"
+
+            end
 
 
-           puts roll_result
+   
