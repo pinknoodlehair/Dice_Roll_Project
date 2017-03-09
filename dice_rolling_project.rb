@@ -37,9 +37,9 @@
                  sides_number = gets.chomp
                   end
 
-                        #    Assigns user input to a new variable 
-                             sides_number_success = sides_number
-                              sides_number_success = sides_number_success.to_i
+                     #    Assigns user input to a new variable 
+                           sides_number_success = sides_number
+                            sides_number_success = sides_number_success.to_i
 
 
   ##  Plugs in values from die_number_success and sides_number_success to create desired output
