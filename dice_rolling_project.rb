@@ -3,6 +3,10 @@
   ##   Welcomes the user
       print "\n""Hello! Welcome to the dice rolling program!"
 
+       #Loop that does the program whilst the user chooses to do so
+        user_answer = "y"
+         if user_answer == "y" 
+
     #   Asks for the number of dice the user wishes to roll
          puts "\n""\n" "Please select the number of dice you wish to roll." 
 
@@ -52,5 +56,9 @@
                   puts rand(1..sides_number_success)
                     end
 
-
+  #   Asks the user if they wish to roll again
    
+       puts "Would you like to roll again? " "\n" "y/n?"
+        user_answer = gets.chomp
+         end
+          abort       
