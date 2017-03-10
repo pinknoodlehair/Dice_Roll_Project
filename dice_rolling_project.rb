@@ -3,31 +3,27 @@
   ##   Welcomes the user
       print "\n""Hello! Welcome to the dice rolling program!"
 
-       #Loop that does the program whilst the user chooses to do so
-        user_answer = "y"
-         if user_answer == "y" 
+   #   sets do condition for the entire program if user wishes to continue after rolling
+        user_continue = "y"
+         while user_continue == "y" do
 
-    #   Asks for the number of dice the user wishes to roll
-         puts "\n""\n" "Please select the number of dice you wish to roll." 
+     #   Asks for the number of dice the user wishes to roll
+          puts "\n""\n" "Please select the number of dice you wish to roll." 
 
           #   Gets user input and turns it into 
                die_number = gets.chomp 
 
-
     ##   Checks to make sure the number is positive
           while !/\A\d+\z/.match(die_number) == true do
-
 
         #    Asks user to re-enter number for number of die to be rolled if input is not an integer
               puts "\n""\n" "I'm sorry, I didn't quite catch that. How many dice do you wish to roll?"
                die_number = gets.chomp
                 end
 
-
                   #    Assigns user input to a new variable 
                         die_number_success = die_number
                          die_number_success = die_number_success.to_i
-
 
   ##    Tells the user the number of die chosen and asks how many sides they wish for each die to have
          puts "\n""\n" "So you want to roll #{die_number_success} die? How many sides are there?"
@@ -45,7 +41,6 @@
                            sides_number_success = sides_number
                             sides_number_success = sides_number_success.to_i
 
-
   ##  Plugs in values from die_number_success and sides_number_success to create desired output
 
       #   Creates formula to roll dice.
@@ -58,7 +53,10 @@
 
   #   Asks the user if they wish to roll again
    
-       puts "Would you like to roll again? " "\n" "y/n?"
+       puts "Would you like to roll again? " "\n" "y/n?" "\n"
         user_answer = gets.chomp
-         end
-          abort       
+
+        #    Checks to see if the user wishes to continue and if not aborts program
+              abort if user_answer != user_continue       
+                end
+              
