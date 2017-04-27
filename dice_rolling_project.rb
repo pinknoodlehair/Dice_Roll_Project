@@ -11,7 +11,7 @@ while user_continue == "y"
   # Asks for the number of dice the user wishes to roll.
   puts "\n\nPlease select the number of dice you wish to roll."
 
-  # Gets user input and turns it into
+  # Gets user input
   die_number = gets.chomp
 
   # Checks to make sure the number is positive
